@@ -4,14 +4,11 @@
 }
 
 .card{
-    height: 400px;
+    height: 420px;
     flex-wrap: wrap;
 }
 
 .card-image{
-    height: 200px;
+    height: 230px;
 }
 
-.x{
-    color: blue;
-}
