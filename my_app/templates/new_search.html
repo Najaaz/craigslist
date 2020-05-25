@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<h3 style="text-align: center;">{{search | title}}</h3>
+
+<div class="row">
+    
+
+    {% for post in final_postings %}
+    
+        <div class="col s4 test">
+
+            <div class="card">
+
+                <div class="card-image">
+                    {% if post.3 == None %}
+                        <a href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1200px-No_image_available.svg.png" alt="Image" style="width: 210px;"></a>
+                    {% else %}
+                        <a href="/"><img src="{{post.3}}" alt="Image"></a>
+                    {% endif %}
+                </div>
+
+                <div class="card-content">
+                    <p>{{post.0}}</p>
+                </div>
+
+                <div class="card-action">
+                    <a href="{{post.1}}">View listing: Price {{post.2}}</a>
+                </div>
+
+            </div>
+
+        </div>
+    {% endfor %}
+
+
+</div>
+      
+{% endblock content %}
