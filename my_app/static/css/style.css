@@ -12,6 +12,7 @@
     height: 200px;
 }
 
-.card-content{
-    margin-top: 3px;
+.detail-img{
+    width: 260px;
+    margin: auto;
 }
