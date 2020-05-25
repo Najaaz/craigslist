@@ -27,10 +27,9 @@ def new_search(request):
     
     final_posting = []
     
-    x=0
+    
     for post in post_listings:
-        if x==12:
-            break
+        
         post_title = post.find(class_ = 'result-title').text
         post_url = post.find('a').get('href')
         
@@ -49,7 +48,7 @@ def new_search(request):
         else:
             pic_of_post = None
         
-        x+=1
+        
         final_posting.append((post_title , post_url , post_price , pic_of_post))
         
 
