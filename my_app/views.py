@@ -47,7 +47,7 @@ def new_search(request):
             pic_of_post = soup.find("img").get('src')
         else:
             pic_of_post = None
-
+        
         final_posting.append((post_title , post_url , post_price , pic_of_post))
         
 

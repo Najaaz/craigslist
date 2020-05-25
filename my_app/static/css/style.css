@@ -11,3 +11,7 @@
 .card-image{
     height: 200px;
 }
+
+.card-content{
+    margin-top: 3px;
+}
